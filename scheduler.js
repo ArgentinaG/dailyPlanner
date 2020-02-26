@@ -1,5 +1,4 @@
-script.js
-/var definitions
+// var definitions
 var currentDay = $('#currentDay');
 var container = $('.container');
 var hours = ["9am", "10am", "11am" ,"12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
@@ -7,6 +6,7 @@ var hours = ["9am", "10am", "11am" ,"12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 currentDay.text(moment().format('dddd, MMMM Do'));
 //create timeblocks
 for(var i = 0; i < hours.length; i++){
+    console.log(hours[i])
     //add hours, textarea, and save btn to each block
     var timeBlock = $('<div>').addClass("time-block row");
     var hourBlock = $('<div>').addClass('hour col-1');
@@ -20,3 +20,7 @@ for(var i = 0; i < hours.length; i++){
     timeBlock.append(textBlock);
     timeBlock.append(SaveBtn);
 }
+
+$("button").on("click", function(){
+    console.log($(this))
+})

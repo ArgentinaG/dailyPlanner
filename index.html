@@ -10,6 +10,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,25 +22,23 @@
   </header>
 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2">
-      Time
-      <div class="col-lg-9">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 text-left">
+        Time
+      </div>
+      <div class="col-md-9 text-center">
         Text
-      <div class="col-sm-1">
-  </div>
-</div>
-
-  
-
-
-
-  <!-- Timeblocks go here -->
-
+      </div>
+      <div class="col-md-1 text-right">
+        <button>Save</button>
+      </div>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <div class="hours"></div> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="scheduler.js"></script>
 </body>
+
 </html>
